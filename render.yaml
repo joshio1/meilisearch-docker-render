@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: meili
+  name: rubypodcatcher-meilisearch
   env: docker
   repo: https://github.com/joshio1/meilisearch-docker-render.git
   plan: starter
@@ -12,7 +12,7 @@ services:
   - key: MEILI_HTTP_ADDR
     value: 0.0.0.0:80
   - key: MEILI_MASTER_KEY
-    generateValue: false
+    generateValue: true
   - key: MEILI_DB_PATH
     value: /meili-data
   - key: MEILI_ENV
